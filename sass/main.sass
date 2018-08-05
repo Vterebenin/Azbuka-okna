@@ -73,6 +73,13 @@ body
 			display: inline
 			&:last-child
 				padding-right: 0
+			a
+				color: #797979
+				transition: color 0.5s 
+				&:hover
+					text-decoration: none
+					color: #fff
+
 	.top-header-right
 		text-align: right
 
@@ -245,8 +252,10 @@ body
 	width: 380px
 	height: 200px
 	position: relative
-	padding-right: 30px
+	margin-right: 20px
 	text-align: right
+	&:last-child
+		margin-right: 0
 	.img-wrapper
 		position: absolute
 		top: 0
@@ -300,7 +309,7 @@ body
 			position: relative
 			text-transform: uppercase
 			width: 210px
-			&:after
+			&:before
 				content: ''
 				position: absolute
 				left: -3px
